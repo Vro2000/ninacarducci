@@ -6,11 +6,13 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
 	z-index: 1000;
+}
+.top-header {
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
@@ -74,6 +76,10 @@ nav a {
 #about-me {
 	flex: 2
 }
+#about-me h3{
+	font-size: 1rem; /* ajout suite à modification hierarchie des titres*/
+}
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -102,7 +108,8 @@ nav a {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	font-weight: 900;
+	background-color: #746e39;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -147,8 +154,9 @@ nav a {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: calc(1.375rem + 1.5vw); /* modification suite à modification hierarchie des titres*/
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -255,7 +263,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p { /* modification h6 en h3 suite à modification hierarchie des titres*/
 		width: 100%;
 	}
 }
