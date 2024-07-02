@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "purify-css": "purifycss assets/bootstrap/bootstrap.css index.html assets/bootstrap/bootstrap.bundle.js --out assets/bootstrap/purified-bootstrap.css"
+  },
+  "devDependencies": {
+    "purify-css": "^1.2.5"
+  }
+}
